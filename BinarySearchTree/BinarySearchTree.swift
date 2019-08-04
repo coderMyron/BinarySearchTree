@@ -51,6 +51,7 @@ extension BinarySearchTree {
 
 // MARK: - 删除Remove
 extension BinaryTreeNode {
+    //MARK: 节点右边的最小值
     var minNode: BinaryTreeNode {
         return leftChild?.minNode ?? self
     }
@@ -67,17 +68,22 @@ extension BinarySearchTree {
         guard let node = node else { return nil }
         
         if node.value == value {
-            
+            // 左右子节点都为空，删除当前节点，为nil
             if node.leftChild == nil && node.rightChild == nil {
                 return nil
             }
+            // 左子节点为空，删除当前节点，当前节点变为右节点
             if node.leftChild == nil {
                 return node.rightChild
             }
+            // 右子节点为空，，删除当前节点，当前节点变为左节点
             if node.rightChild == nil {
                 return node.leftChild
             }
+            // 左右子节点都不为空
+            // 把当前节点的值更新为右子节点的最小值
             node.value = node.rightChild!.minNode.value
+            // 把右子节点的最小值删除
             node.rightChild = remove(node: node.rightChild, value: node.value)
             
         } else if value < node.value {

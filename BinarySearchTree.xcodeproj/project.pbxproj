@@ -14,6 +14,8 @@
 		A1373DF322F720E2000B44B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1373DF122F720E2000B44B2 /* LaunchScreen.storyboard */; };
 		A1373DFE22F720E2000B44B2 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1373DFD22F720E2000B44B2 /* BinarySearchTreeTests.swift */; };
 		A1373E0922F720E2000B44B2 /* BinarySearchTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1373E0822F720E2000B44B2 /* BinarySearchTreeUITests.swift */; };
+		A1373E1722F720FA000B44B2 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1373E1622F720FA000B44B2 /* BinarySearchTree.swift */; };
+		A1373E1922F7211D000B44B2 /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1373E1822F7211D000B44B2 /* BinaryTreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A1373E0422F720E2000B44B2 /* BinarySearchTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinarySearchTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1373E0822F720E2000B44B2 /* BinarySearchTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeUITests.swift; sourceTree = "<group>"; };
 		A1373E0A22F720E2000B44B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1373E1622F720FA000B44B2 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		A1373E1822F7211D000B44B2 /* BinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A1373DEF22F720E2000B44B2 /* Assets.xcassets */,
 				A1373DF122F720E2000B44B2 /* LaunchScreen.storyboard */,
 				A1373DF422F720E2000B44B2 /* Info.plist */,
+				A1373E1822F7211D000B44B2 /* BinaryTreeNode.swift */,
+				A1373E1622F720FA000B44B2 /* BinarySearchTree.swift */,
 			);
 			path = BinarySearchTree;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				A1373DEB22F720E1000B44B2 /* ViewController.swift in Sources */,
 				A1373DE922F720E1000B44B2 /* AppDelegate.swift in Sources */,
+				A1373E1922F7211D000B44B2 /* BinaryTreeNode.swift in Sources */,
+				A1373E1722F720FA000B44B2 /* BinarySearchTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.myron.BinarySearchTree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myron.Stack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.myron.BinarySearchTree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myron.Stack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
